@@ -1,0 +1,6 @@
+projectKey=RERA
+serverUrl=http://localhost:9003
+serverVersion=9.1.0.47736
+dashboardUrl=http://localhost:9003/dashboard?id=RERA
+ceTaskId=AX12Or7sXRJAND6Ph2nV
+ceTaskUrl=http://localhost:9003/api/ce/task?id=AX12Or7sXRJAND6Ph2nV

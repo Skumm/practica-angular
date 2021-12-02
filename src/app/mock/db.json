@@ -1,0 +1,139 @@
+{
+  "users": [
+    {
+      "name": "Ana Alvarez",
+      "bithDate": "1/01/1991",
+      "age": "30",
+      "document": "00000000A",
+      "adress": "Calle Añascos nº1 Trujillo (Cáceres)",
+      "username": "aAlvarez01",
+      "password": "1234asdf+"
+    },
+    {
+      "name": "Borja Blasco",
+      "bithDate": "2/02/1991",
+      "age": "30",
+      "document": "00000000B",
+      "adress": "Calle Tiedra nº8 Madrid (Madrid)",
+      "username": "bBlasco02",
+      "password": "password"
+    },
+    {
+      "name": "Cristian Cruz",
+      "bithDate": "3/03/1991",
+      "age": "30",
+      "document": "00000000C",
+      "adress": "Calle Villalobos nº29 Madrid (Madrid)",
+      "username": "cCruz03",
+      "password": "contraseña"
+    },
+    {
+      "name": "Diana Diaz",
+      "bithDate": "4/04/1991",
+      "age": "30",
+      "document": "00000000D",
+      "adress": "Calle Falsa nº123 Albuquerque (Nuevo Mexico)",
+      "username": "dDiaz04",
+      "password": "holachato+"
+    },
+    {
+      "name": "Emiliano Estofado",
+      "bithDate": "5/05/1991",
+      "age": "30",
+      "document": "00000000E",
+      "adress": "Calle Sol nº1 Casas de Miravete (Cáceres)",
+      "username": "eEstofado05",
+      "password": "pececillo"
+    },
+    {
+      "name": "Ana q",
+      "bithDate": "1/01/1991",
+      "age": "30",
+      "document": "00000000A",
+      "adress": "Calle Añascos nº1 Trujillo (Cáceres)",
+      "username": "aAlvarez01",
+      "password": "1234asdf+"
+    },
+    {
+      "name": "Ana w",
+      "bithDate": "1/01/1991",
+      "age": "30",
+      "document": "00000000A",
+      "adress": "Calle Añascos nº1 Trujillo (Cáceres)",
+      "username": "aAlvarez01",
+      "password": "1234asdf+"
+    },
+    {
+      "name": "Ana e",
+      "bithDate": "1/01/1991",
+      "age": "30",
+      "document": "00000000A",
+      "adress": "Calle Añascos nº1 Trujillo (Cáceres)",
+      "username": "aAlvarez01",
+      "password": "1234asdf+"
+    },
+    {
+      "name": "Ana r",
+      "bithDate": "1/01/1991",
+      "age": "30",
+      "document": "00000000A",
+      "adress": "Calle Añascos nº1 Trujillo (Cáceres)",
+      "username": "aAlvarez01",
+      "password": "1234asdf+"
+    },
+    {
+      "name": "Ana t",
+      "bithDate": "1/01/1991",
+      "age": "30",
+      "document": "00000000A",
+      "adress": "Calle Añascos nº1 Trujillo (Cáceres)",
+      "username": "aAlvarez01",
+      "password": "1234asdf+"
+    },
+    {
+      "name": "Ana y",
+      "bithDate": "1/01/1991",
+      "age": "30",
+      "document": "00000000A",
+      "adress": "Calle Añascos nº1 Trujillo (Cáceres)",
+      "username": "aAlvarez01",
+      "password": "1234asdf+"
+    },
+    {
+      "name": "Ana u",
+      "bithDate": "1/01/1991",
+      "age": "30",
+      "document": "00000000A",
+      "adress": "Calle Añascos nº1 Trujillo (Cáceres)",
+      "username": "aAlvarez01",
+      "password": "1234asdf+"
+    },
+    {
+      "name": "Ana i",
+      "bithDate": "1/01/1991",
+      "age": "30",
+      "document": "00000000A",
+      "adress": "Calle Añascos nº1 Trujillo (Cáceres)",
+      "username": "aAlvarez01",
+      "password": "1234asdf+"
+    },
+    {
+      "name": "Ana o",
+      "bithDate": "1/01/1991",
+      "age": "30",
+      "document": "00000000A",
+      "adress": "Calle Añascos nº1 Trujillo (Cáceres)",
+      "username": "aAlvarez01",
+      "password": "1234asdf+"
+    },
+    {
+      "name": "Ana p",
+      "bithDate": "1/01/1991",
+      "age": "30",
+      "document": "00000000A",
+      "adress": "Calle Añascos nº1 Trujillo (Cáceres)",
+      "username": "aAlvarez01",
+      "password": "1234asdf+"
+    }
+  ]
+}
