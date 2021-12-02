@@ -8,7 +8,6 @@ import {FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
 })
 export class LogComponent implements OnInit {
   @Output() loginData = new EventEmitter<any>();
-  regexMailValidation: RegExp = new RegExp(/^\w+([-]?\w+)*@\w+([-]?\w+)*(\.\w{2,3})+$/);
   public formLogin: FormGroup;
   constructor(private formBuilder: FormBuilder) {
     this.formLogin = this.formBuilder.group({});
@@ -17,9 +16,9 @@ export class LogComponent implements OnInit {
   ngOnInit(): void {
     this.formLogin = this.formBuilder.group({
       email: new FormControl([],
-        [Validators.required, Validators.pattern(this.regexMailValidation)]),
+        [Validators.required]),
       password: new FormControl([],
-        [Validators.minLength(6), Validators.maxLength(8), Validators.required])
+        [Validators.minLength(6), Validators.maxLength(10), Validators.required])
     });
   }
 
