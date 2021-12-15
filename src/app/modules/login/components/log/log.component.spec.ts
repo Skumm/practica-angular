@@ -25,39 +25,41 @@ describe('LogComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it('El numero de input coincide con los existentes en FormGroup', () => {
-    const loginFormGroupLength = Object.keys(component.formLogin.controls).length;
-    const formElement = fixture.debugElement.nativeElement.querySelector('#loginForm');
-    const inputElements = formElement.querySelectorAll('input');
-    expect(inputElements.length).toEqual(loginFormGroupLength);
-  });
-
-  it('Comprobamos validacion con datos INCORRECTOS', () => {
-    component.formLogin.controls.email.setValue('a.-@hotmail.com');
-    component.formLogin.controls.password.setValue('1234');
+  it('Comprobamos que el formulario es INVALIDO cuando esta vacio', () => {
+    component.formLogin.controls.user.setValue('');
+    component.formLogin.controls.password.setValue('');
     expect(component.formLogin.valid).toBeFalsy();
   });
 
-  it('Comprobamos validacion con datos CORRECTOS', () => {
-    component.formLogin.controls.email.setValue('joseantonio@hotmail.com');
-    component.formLogin.controls.password.setValue('123456');
-    expect(component.formLogin.valid).toBeTruthy();
+  it('Comprobamos que el campo usuario es INVALIDO cuando esta vacio', () => {
+    component.formLogin.controls.user.setValue('');
+    expect(component.formLogin.controls.user.valid).toBeFalsy();
   });
 
-  it('Comprobamos que el boton permanece deshabilitado con datos INCORRECTOS', () => {
-    const formElement = fixture.debugElement.nativeElement.querySelector('#loginForm');
-    const inputElements = formElement.querySelectorAll('input');
-    const buttonElement = formElement.querySelector('button');
-    inputElements[0].value = 'a.-+@hotmail.com';
-    expect(buttonElement.disabled).toBeTruthy();
+  it('Comprobamos que el campo usuario contiene el error required', () => {
+    let errors = component.formLogin.controls.user.errors || {};
+    expect(errors['required']).toBeTruthy();
   });
 
-  it('Comprobamos que el boton permanece habilitado con datos CORRECTOS', () => {
-    const formElement = fixture.debugElement.nativeElement.querySelector('#loginForm');
-    const inputElements = formElement.querySelectorAll('input');
-    const buttonElement = formElement.querySelector('button');
-    inputElements[0].value = 'joseantonio@hotmail.com';
-    inputElements[1].value = '123456';
-    expect(buttonElement.attributes.getNamedItem('ng-reflect-is-disabled')?.value).toBeFalsy();
+  it('Comprobamos que al introducir un usuario el error required no está presente', () => {
+    component.formLogin.controls.user.setValue('b');
+    let errors = component.formLogin.controls.user.errors || {};
+    expect(errors['required']).toBeFalsy();
+  });
+
+  it('Comprobamos que el campo password es INVALIDO cuando esta vacio', () => {
+    component.formLogin.controls.password.setValue('');
+    expect(component.formLogin.controls.password.valid).toBeFalsy();
+  });
+
+  it('Comprobamos que el campo password contiene el error required', () => {
+    let errors = component.formLogin.controls.password.errors || {};
+    expect(errors['required']).toBeTruthy();
+  });
+
+  it('Comprobamos que al introducir un password el error required no está presente', () => {
+    component.formLogin.controls.password.setValue('b');
+    let errors = component.formLogin.controls.password.errors || {};
+    expect(errors['required']).toBeFalsy();
   });
 });

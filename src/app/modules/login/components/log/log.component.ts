@@ -15,10 +15,10 @@ export class LogComponent implements OnInit {
 
   ngOnInit(): void {
     this.formLogin = this.formBuilder.group({
-      email: new FormControl([],
+      user: new FormControl([],
         [Validators.required]),
       password: new FormControl([],
-        [Validators.minLength(6), Validators.maxLength(10), Validators.required])
+        [Validators.required])
     });
   }
 

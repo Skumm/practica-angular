@@ -1,0 +1,12 @@
+<form [formGroup]="searchForm" id="searchForm" (submit)="sendData(searchForm)">
+    <div class="input-group mb-3 justi">
+        <input *ngFor="let input of inputList" type="text" 
+        class="form-control search-control" 
+        id="{{ input }}" formControlName="{{ input }}" 
+        placeholder="{{ input }}">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="submit">Buscar</button>
+        </div>
+      </div>
+</form>
+  

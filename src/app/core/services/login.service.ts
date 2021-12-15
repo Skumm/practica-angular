@@ -11,6 +11,6 @@ export class LoginService {
   }
 
   public getUser(user: string, password: string): Observable<any> {
-    return this.http.get('http://localhost:3000/users?email=' + user + '&password=' + password);
+    return this.http.get('http://localhost:3000/users?username=' + user + '&password=' + password);
   }
 }
